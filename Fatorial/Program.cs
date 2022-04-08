@@ -12,11 +12,11 @@ namespace Fatorial
             Console.Write("Enter a number: ");
             number = int.Parse(Console.ReadLine());
 
-            result = fat(number);
+            result = fatorial(number);
 
             Console.WriteLine($"{number}! = {result}");
 
-            static int fat(int number)
+            static int fatorial(int number)
             {
 
                 if(number == 0)
@@ -28,7 +28,7 @@ namespace Fatorial
                 else
                 {
 
-                    return ((number) * (fat(number - 1)));
+                    return ((number) * (fatorial(number - 1)));
 
                 }
             }
